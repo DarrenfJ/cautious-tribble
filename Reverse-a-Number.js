@@ -11,8 +11,8 @@ function reverseNumber(n) {
   // is it a negative?
   var neg = false;
   if (arr[0] === '-') {
-  neg = "true";
-  arr.shift();
+    neg = "true";
+    arr.shift();
   }
   //reverse and join
   var newStr = arr.reverse().join('');
