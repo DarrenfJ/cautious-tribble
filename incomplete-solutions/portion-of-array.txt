@@ -1,0 +1,27 @@
+portion of array
+
+need reverse case
+
+https://www.codewars.com/kata/portion-of-array/train/javascript
+
+code so far
+
+function portion(a,i,n){
+  // use slice for forward
+  // calculate n-x for reverse
+  //console.log(a);
+  console.log("length: " + a.length + " i: " + i + " n: " + n);
+  var arr =[];
+var posI = Math.abs(i);
+  if (posI > a.length-1 || (posI+n-1) > a.length-1) {
+    return -1;
+  }
+    if (i<0) {
+  	var revArr = a.reverse();
+      var revSlice = revArr.slice(posI, posI+n);
+      arr = revSlice.reverse();
+    } else {
+      arr = a.slice(i, i+n);
+    }
+  return arr;
+}

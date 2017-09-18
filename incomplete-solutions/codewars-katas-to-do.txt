@@ -1,0 +1,10 @@
+Codewars katas to do
+
+https://www.codewars.com/kata/multiples-of-3-and-5/train/javascript
+
+https://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/ruby
+
+https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript
+
+https://www.codewars.com/kata/a-chain-adding-function/train/javascript
+

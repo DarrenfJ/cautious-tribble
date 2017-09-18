@@ -1,0 +1,66 @@
+human readable format needs rejig
+
+https://www.codewars.com/kata/human-readable-duration-format/train/javascript
+
+code so far (need year, day)
+
+function formatDuration (seconds) {
+  // Complete this function
+  // I can totally refactor this to have fincs for second, minute hour calcs
+  var minutes;
+  var hours;
+  var remain;
+  var answer; 
+  // exceptions
+  if (seconds === 0 ) { return "now"}
+  if( seconds < 60 ) {
+    // do seconds calc
+    if (seconds > 1) {
+    return seconds + " seconds";
+    } else {
+      return seconds + " second";
+    }
+  }  else if (seconds < 3600 ) {
+    // do minutes calc
+    minutes = Math.floor(seconds/60);
+    remain = (seconds%60);
+    if (minutes < 2) {
+    answer = minutes + " minute and " + remain + " seconds";
+    return answer;
+    } else {
+      if (remain) {
+         answer = minutes + " minutes and " + remain + " seconds";
+      return answer;
+      } else {
+        answer = minutes + " minutes";
+        return answer;
+      }
+    }
+  } else {
+  /// do hours calc
+  hours = Math.floor((seconds/3600));
+  remain = seconds%3600;
+  minutes = Math.floor(remain/60);
+  seconds = (remain%60);
+  console.log("There are: " + hours + " hours");
+  console.log("There are: " + minutes + " minutes");
+   console.log("seconds: " + seconds + " seconds");
+   if (hours === 1) {
+    answer = hours + " hour";
+   }
+    if (minutes > 0 && minutes < 120) {
+        answer = answer + ", " + minutes + " minute";
+    }
+    if (minutes >= 120) {
+        answer = answer + ", " + minutes + " minutes";
+    }
+    if (seconds > 0) {
+         answer = answer + " and " + seconds + " seconds";
+    }
+    if (seconds === 1 ) {
+         answer = answer + " and " + seconds + " second";
+    }
+    return answer;
+   }
+}
+
