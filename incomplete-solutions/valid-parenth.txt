@@ -1,0 +1,16 @@
+valid parenth
+
+https://www.codewars.com/kata/valid-parentheses/train/javascript
+
+function validParentheses(parens){
+  //TODO 
+  console.log(parens);
+  var arr = parens.split('');
+  console.log(arr);
+  for (var i = 0;i<arr.length;i++) {
+    if (arr[i] === "(")  {
+      // keep a count?
+    }
+  }
+}
+

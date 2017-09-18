@@ -1,0 +1,52 @@
+// #Hashtag
+// https://www.codewars.com/kata/number-hashtag/train/javascript
+//
+// using:
+// https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript#9862788
+
+// not quite right yet... the # # # # and hashes in the middle part
+function isLetter(str) {
+  return str.length === 1 && str.match(/[a-z]/i);
+}
+function getHashtags(post) {
+  // Add logic here
+  var noHash = true;
+   var hashArr = [];
+  console.log(post);
+  if (post === "#") {
+    return hashArr;
+  }
+ 
+  var arr = post.split(' ');
+  for (var i = 0; i < arr.length; i++) {
+    var testArr = arr[i].split('');
+    //console.log(testArr);
+   if (testArr[0] === "#" && isLetter(testArr[1])) {
+   for (var j = 2; j < testArr.length; j++) {
+      console.log(testArr[j]);     
+    if(testArr[j] === "#") {
+        console.log("we have one");
+        console.log(testArr);
+         noHash = false;
+        }
+     }    
+    } 
+    
+    
+    
+    
+    if (testArr[0] === "#" && isLetter(testArr[1]) && noHash) {
+      testArr.shift();
+      var holdArr = testArr.join('');
+      hashArr.push(holdArr)
+    }
+    if (testArr[0] === "#" && testArr[1] === "#" && noHash) {
+      testArr = testArr.slice(2, testArr.length);
+      //testArr.shift();
+      var holdArr = testArr.join('');
+      hashArr.push(holdArr)
+    }
+  }
+  console.log(hashArr);
+  return hashArr;
+}

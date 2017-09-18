@@ -8,3 +8,5 @@ https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/t
 
 https://www.codewars.com/kata/a-chain-adding-function/train/javascript
 
+https://www.codewars.com/kata/valid-braces
+
