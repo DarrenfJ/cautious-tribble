@@ -1,0 +1,12 @@
+// Number toString
+// https://www.codewars.com/kata/number-tostring/train/javascript
+
+var a = 123;
+
+a = a.toString();
+
+/// what is it expecting/ a return statement?
+
+error:
+The server timed out waiting for the request to be processed. This may be due to high server load. Please try your request again.
+
