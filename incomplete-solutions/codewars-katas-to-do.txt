@@ -10,3 +10,17 @@ https://www.codewars.com/kata/a-chain-adding-function/train/javascript
 
 https://www.codewars.com/kata/valid-braces
 
+https://www.codewars.com/kata/pascals-triangle-number-2/train/javascript
+
+https://www.codewars.com/kata/pascals-triangle
+
+https://www.codewars.com/kata/decode-the-morse-code
+
+https://www.codewars.com/kata/exes-and-ohs/train/javascript
+
+https://www.codewars.com/kata/search/my-languages?q=Write+Number+in+Expanded+Form&beta=false
+
+https://www.codewars.com/kata/write-number-in-expanded-form/train/javascript
+
+
+

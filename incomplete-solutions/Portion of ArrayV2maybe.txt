@@ -1,0 +1,26 @@
+// Portion of Array
+// https://www.codewars.com/kata/portion-of-array/train/javascript
+
+// part not working; some -1's (probably neg)
+// and some sections
+
+function portion(a,i,n){
+  // use slice for forward
+  // calculate n-x for reverse
+  var arr =[];
+  if (Math.abs(i) > a.length-1 || (Math.abs(i+n-1) > a.length-1)) {
+    return -1;
+  }
+  if (i >=0) {
+    arr = a.slice(i, n+1);
+  } else {
+  console.log(a.length);
+    var revI = a.length-n-1;
+    var revN = a.length+i;
+    arr = a.slice(revI, revN);
+    console.log(revI);
+    console.log(revN);
+    console.log(arr);
+  }
+  return arr;
+}
