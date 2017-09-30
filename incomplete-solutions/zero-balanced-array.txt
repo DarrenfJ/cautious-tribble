@@ -1,0 +1,31 @@
+// zero-balanced Array
+// https://www.codewars.com/kata/zero-balanced-array/train/javascript
+
+// more to do
+
+function ìsZeroBalanced(n){
+  console.log(n);
+  console.log(typeof n[0]);
+  var sum = 0;
+  var zeroBal = false;
+  /// exceptions
+  if (typeof n !== 'undefined' && n.length > 0) {
+    // the array is defined and has at least one element
+    // sum check
+      for (var i = 0; i < n.length; i++ ) {
+      console.log(n[i]);
+        sum = sum + n[i];
+      }
+      if (sum === 0) {
+        zeroBal = true;
+      }
+     console.log("this is the sum: " + sum);
+    // -n check
+    
+    
+    /// other exceptions
+
+  }
+  //return 'zero-balanced ? '
+  return zeroBal;
+}

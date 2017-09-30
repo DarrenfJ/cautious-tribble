@@ -22,5 +22,11 @@ https://www.codewars.com/kata/search/my-languages?q=Write+Number+in+Expanded+For
 
 https://www.codewars.com/kata/write-number-in-expanded-form/train/javascript
 
+https://www.codewars.com/kata/next-smaller-number-with-the-same-digits/train/javascript
+
+https://www.codewars.com/kata/inertial-array
+
+https://www.codewars.com/kata/enumerable-magic-number-4-true-for-none
+
 
 
