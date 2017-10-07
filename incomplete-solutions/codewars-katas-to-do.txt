@@ -28,5 +28,7 @@ https://www.codewars.com/kata/inertial-array
 
 https://www.codewars.com/kata/enumerable-magic-number-4-true-for-none
 
+https://www.codewars.com/kata/merged-string-checker/train/javascript
+
 
 

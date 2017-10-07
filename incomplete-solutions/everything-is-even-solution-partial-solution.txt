@@ -1,0 +1,46 @@
+Everything is even solution
+
+concerned that .5 should round to closet 'even number' and not just donw
+
+https://www.codewars.com/kata/everything-is-even/train/javascript
+
+my code:
+
+function isEven(n) {
+   return n % 2 == 0;
+}
+
+function isOdd(n) {
+   return Math.abs(n % 2) == 1;
+}
+
+function isNeg(n) {
+   return n*(-1);
+}
+
+function ensureEven(n) {
+  // Code on squire...
+  console.log("this is n: " + n);
+  // is it a neg number?
+  var neg = false;
+  if (n < 0) {
+    neg = true;
+    console.log('this is a neg');
+    n = Math.abs(n); 
+  }
+  console.log("after neg reverse: " + n);
+  n = Math.round(n);
+  console.log(n);
+  if (isEven(n)) {
+    if (neg) {
+     return n*(-1);
+    }
+    return n;
+  } else if (isOdd(n)) {
+   n = n+1;
+   if (neg) {
+     return n*(-1);
+    }
+   return n;
+   }
+}
