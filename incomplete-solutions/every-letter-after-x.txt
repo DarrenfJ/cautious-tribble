@@ -1,0 +1,51 @@
+// Make every letter after X into caps.
+// https://www.codewars.com/kata/make-every-letter-after-x-into-caps/train/javascript
+
+
+test run
+
+function titleCase(str) {
+ var splitStr = str.toLowerCase().split(' ');
+ for (var i = 1; i < splitStr.length; i++) {
+   if (splitStr.length[i] < splitStr.length) {
+     splitStr[i].charAt(0).toUpperCase();     
+   }
+      str = splitStr.join(' '); 
+      console.log("this is uppercase func: " + str);
+ }
+return str;
+}
+
+var makeEveryLetterAfterXCaps = function (str, letter) {
+  // enter solution here
+  var newWord = "";
+  console.log("this is the string: " + str);
+  console.log("this is the letter: " +letter);
+  // break into array of words
+  var words = str.split(' ');
+  console.log("this is the words: " + words);
+  for (var i = 0; i < words.length; i++) {
+    //split the word
+    var wordSplit = words[i].split('');
+    console.log(wordSplit)
+    for (var j = 0;j<wordSplit.length-1;j++) {
+      if (letter === " " ) {
+        if (i !== 0 ) { 
+          console.log("this is the first letter to replace: " + wordSplit[0]);
+          wordSplit[0] = wordSplit[0].toUpperCase();
+          console.log("replaced?: " + wordSplit[0]);
+        }
+      } else if (wordSplit[j] === letter ) {
+      console.log("this is the letter to replace: " + wordSplit[j+1]);
+        wordSplit[j+1] = wordSplit[j+1].toUpperCase();
+        console.log("replaced?: " + wordSplit[j+1]);
+      }
+      newWord=wordSplit.join('');
+    }
+    console.log("this is the word rejoined: " + newWord);
+    words[i] = newWord;
+    str=words.join(' ');
+  }
+  console.log(str);
+  return str;
+}

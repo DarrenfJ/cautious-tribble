@@ -1,0 +1,27 @@
+// Is my string repeating the same character over and over ?
+// https://www.codewars.com/kata/is-my-string-repeating-the-same-character-over-and-over/train/javascript
+
+using loops
+
+function hasOneChar(s) {
+  for (var i = 1; i < s.length;i++ ) {
+    if (s[i] !== s[0]) {
+     return false;
+    }
+  }
+  return true;
+}
+
+not using for loops
+
+function hasOneChar(s) {
+  var repeat = true;
+  count = 0;
+  while (repeat && count < s.length && count < 100) {
+    if (s[0] !== s[count]) {
+      repeat = false;
+    }
+    count++;
+}
+  return repeat;
+}

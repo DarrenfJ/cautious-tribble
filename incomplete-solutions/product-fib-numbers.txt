@@ -1,0 +1,87 @@
+Product of consecutive Fib numbers
+
+https://www.codewars.com/kata/product-of-consecutive-fib-numbers/train/javascript
+
+// using
+
+https://www.miniwebtool.com/list-of-fibonacci-numbers/?number=100
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
+
+=====
+
+function productFib(prod){
+  // ...
+  var f1 = 1;
+  var f2 = 1;
+  var index = 0;
+  console.log(prod);
+  // find some way to split the prod so for starts higher (don't want to was cycles at lower numbers when prod is 1000+)
+  // but must be 'below' the two we we are checking against
+  // try with square root
+   var sqr = Math.sqrt(prod);
+   console.log(sqr);
+  // any way to know a fib number? or input it as an object or array to reference?
+  var fib = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025]
+  // start loop
+  // this part is just to start.. finding the first 'smaller' fib
+  for (var i = 0 ;i < fib.length;i++ ) {
+    if (sqr > fib[i]) {
+      f1 = fib[i-1];
+      f2 = fib[i];
+      index = i;
+    }
+  }
+  // use my fib algo from fCC
+  
+  
+  
+  // take two fibs add to get third is 2nd and 3rd === prod? no is it > then return false
+  // else add to three for fourth and repeat
+
+
+ 
+  
+  console.log(f1);
+  console.log(f2);
+  console.log(index);
+}
+
+
+
+=====
+
+pseudo code:
+
+latest Q
+
+try to test orig f1 and f2 before recalc... then increment?
+
+to ensure they're not > prod?
+
+=====
+
+orig
+
+// find some way to split the prod so for starts higher (don't want to waste cycles at lower numbers when prod is 1000+)
+// but must be 'below' the two we we are checking against
+
+// start loop
+
+// any way to know a fib number? or input it as an object or array to reference?
+
+// take two fibs add to get third is 2nd and 3rd === prod? no is it > then return false
+// else add to three for fourth and repeat
+
+// use my fib algo from fCC
+
+
+new Q have an array of numbers i have a number and want to find the one smaller than it, consider they are already sorted...
+
+how do I do that without using an for loop?
+
+refactoring the Q
+
+
+// while loop.. while f1 * f2 < prod
+
+// using this for first 100 fib number --> https://www.miniwebtool.com/list-of-fibonacci-numbers/?number=100

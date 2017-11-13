@@ -1,0 +1,14 @@
+sum times tables
+
+https://www.codewars.com/kata/sum-times-tables/train/javascript
+
+function sumTimesTables(tables, min, max){
+  //your code here
+  var sum = 0;
+  for (var i = 0; i < tables.length;i++) {
+    for (var j = min; j <= max;j++) {
+      sum = sum + tables[i]*j;
+    }
+  }
+  return sum;
+}

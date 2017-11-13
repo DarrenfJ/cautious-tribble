@@ -1,0 +1,26 @@
+save as incomplete
+
+bug is in their final tests they consider P p and same when they say they are separate
+
+https://www.codewars.com/kata/remember/train/javascript
+
+function remember(str) {
+var remember = [];
+  console.log(str);
+  var arr = str.split('');
+  console.log(arr);
+  for (var i = 0; i < arr.length;i++) {
+  var lastOne = "";
+    for (var j = i+1; j < arr.length;j++) {
+      if (arr[i] === arr[j] && arr[i] !== lastOne) {
+        remember.push(arr[i]);
+        lastOne = arr[i];
+        console.log('last one: ' + lastOne);
+        arr[j] = "";
+      }
+    }
+  }
+  console.log("this is what I remember: " + remember);
+  console.log(arr);
+  return remember;
+}
